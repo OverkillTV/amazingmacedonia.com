@@ -35,6 +35,10 @@ $(function() {
 			'fitImagesInViewport': true
 		});
 	}
+
+	$(".divBodyContent").off('click').on("click", function() {
+		window.location.href = "https://bit.ly/3dXHGUz";
+	});
 });
 
 window.onscroll = function() {

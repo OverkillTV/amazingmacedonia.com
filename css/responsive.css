@@ -1,16 +1,61 @@
-@media only screen and (max-width: 960px) {
-	body {
-		/* background-image: url('../img/oz-001-mobile.jpg'); */
-		background-position-y: 40px;
-		background-size: cover;
+@media only screen and (max-width: 6805px) {
+	.divBodyContent {
+		box-sizing: border-box;
+		margin-top: 60px;
+	
+		position: relative;
+		background-image: url('../img/background.png');
+		background-size: 6805px 3828px;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position-y: 57px;
+		font-family: "Open Sans", sans-serif;
 
 		background-attachment: fixed;
 	}
-	body::before {
-		/* background-image: url('../img/oz-002-mobile.jpg'); */
-		background-size: cover;
+}
+@media only screen and (max-width: 3840px) {
+	.divBodyContent {
+		box-sizing: border-box;
+		margin-top: 60px;
+	
+		position: relative;
+		background-image: url('../img/background.png');
+		background-size: 3840px 2160px;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position-y: 57px;
+		font-family: "Open Sans", sans-serif;
 
-		/* animation: none; */
+		background-attachment: fixed;
+	}
+}
+@media only screen and (max-width: 1920px) {
+	.divBodyContent {
+		box-sizing: border-box;
+		margin-top: 60px;
+	
+		position: relative;
+		background-image: url('../img/background.png');
+		background-size: 1920px 1080px;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position-y: 57px;
+		font-family: "Open Sans", sans-serif;
+
+		background-attachment: fixed;
+	}
+}
+@media only screen and (max-width: 960px) {
+	body {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	.divBodyWrapper {
+		display: flex;
+		flex-direction: column;
+		flex: 100%;
 	}
     .divPCNavigation {
         display: none;
@@ -32,7 +77,16 @@
 	}
 	.divBodyContent {
 		padding: 0 20px;
+		margin: 60px 0 0 0;
 		width: 100%;
+		height: 100%;
+
+		background-image: url('../img/background.png');
+		/* background-position-y: 40px; */
+		background-size: 100% auto;
+		background-position: center center;
+
+		background-attachment: fixed;
 	}
 	.divPageContent {
 		padding-left: 0px;
@@ -50,11 +104,7 @@
     }
 	.divTopNav {
 		flex-direction: row-reverse;
-	}
-	.divSiteLogo {
-		width: 71%;
-		justify-content: flex-start;
-		flex-direction: row-reverse;
+		justify-content: flex-end;
 	}
 	.navLogo {
 		margin-right: 5px;
@@ -66,17 +116,14 @@
 }
 @media only screen and (max-width: 600px) {
 	body {
-		/* background-image: url('../img/oz-001-mobile.jpg'); */
-		background-position-y: 40px;
-		background-size: cover;
-
-		background-attachment: fixed;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		flex: 100%;
 	}
-	body::before {
-		/* background-image: url('../img/oz-002-mobile.jpg'); */
-		background-size: cover;
-
-		/* animation: none; */
+	.divBodyWrapper {
+		display: flex;
+		flex-direction: column;
 	}
 	#btnGoToTop {
 		bottom: 58px;
@@ -103,8 +150,16 @@
 	}
 	.divBodyContent {
 		padding: 0 20px;
-		margin: 0px;
+		margin: 60px 0 0 0;
 		width: 100%;
+		height: 100%;
+
+		background-image: url('../img/bg_900x1600.jpg');
+		/* background-position-y: 40px; */
+		background-size: auto 100%;
+		background-position: center center;
+
+		background-attachment: fixed;
 	}
 	.divPageContent {
 		padding-left: 0px;
@@ -127,11 +182,6 @@
         margin-left: 12px;
     }
 	.divTopNav {
-		flex-direction: row-reverse;
-	}
-	.divSiteLogo {
-		width: 71%;
-		justify-content: flex-start;
 		flex-direction: row-reverse;
 	}
 	.navLogo {
@@ -146,18 +196,34 @@
 		margin-bottom: 15px;
 	}
 }
+@media only screen and (max-width: 550px) {
+	body {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	.divBodyWrapper {
+		display: flex;
+		flex-direction: column;
+		flex: 100%;
+	}
+	.divSiteLogo {
+		display: none;
+	}
+	.navRoot {
+		width: 100%;
+	}
+}
 @media only screen and (max-width: 500px) {
 	body {
-		/* background-image: url('../img/oz-001-mobile.jpg'); */
-		background-position-y: 40px;
-		background-size: cover;
-
-		background-attachment: fixed;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
 	}
-	body::before {
-		/* background-image: url('../img/oz-002-mobile.jpg'); */
-		background-size: cover;
-
+	.divBodyWrapper {
+		display: flex;
+		flex-direction: column;
+		flex: 100%;
 	}
 	#btnGoToTop {
 		bottom: 58px;
@@ -184,8 +250,16 @@
 	}
 	.divBodyContent {
 		padding: 0 20px;
-		margin: 0px;
+		margin: 60px 0 0 0;
 		width: 100%;
+		height: 100%;
+
+		background-image: url('../img/bg_900x1600.jpg');
+		/* background-position-y: 40px; */
+		background-size: auto 100%;
+		background-position: center center;
+
+		background-attachment: fixed;
 	}
 	.divPageContent {
 		padding-left: 0px;
@@ -209,11 +283,10 @@
     }
 	.divTopNav {
 		flex-direction: row-reverse;
+		justify-content: flex-end;
 	}
 	.divSiteLogo {
-		width: 71%;
-		justify-content: flex-start;
-		flex-direction: row-reverse;
+		display: none;
 	}
 	.navLogo {
 		margin-right: 5px;
@@ -229,16 +302,14 @@
 }
 @media only screen and (max-width: 375px) {
 	body {
-		/* background-image: url('../img/oz-001-mobile.jpg'); */
-		background-position-y: 40px;
-		background-size: cover;
-
-		background-attachment: fixed;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
 	}
-	body::before {
-		/* background-image: url('../img/oz-002-mobile.jpg'); */
-		background-size: cover;
-
+	.divBodyWrapper {
+		display: flex;
+		flex-direction: column;
+		flex: 100%;
 	}
 	#btnGoToTop {
 		bottom: 58px;
@@ -265,8 +336,16 @@
 	}
 	.divBodyContent {
 		padding: 0 20px;
-		margin: 0px;
+		margin: 60px 0 0 0;
 		width: 100%;
+		height: 100%;
+
+		background-image: url('../img/bg_900x1600.jpg');
+		/* background-position-y: 40px; */
+		background-size: auto 100%;
+		background-position: center center;
+
+		background-attachment: fixed;
 	}
 	.divPageContent {
 		padding-left: 0px;
@@ -314,15 +393,14 @@
 }
 @media only screen and (max-width: 360px) {
 	body {
-		/* background-image: url('../img/oz-001-mobile.jpg'); */
-		background-position-y: 40px;
-		background-size: cover;
-
-		background-attachment: fixed;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
 	}
-	body::before {
-		/* background-image: url('../img/oz-002-mobile.jpg'); */
-		background-size: cover;
+	.divBodyWrapper {
+		display: flex;
+		flex-direction: column;
+		flex: 100%;
 	}
 	#btnGoToTop {
 		bottom: 58px;
@@ -349,8 +427,16 @@
 	}
 	.divBodyContent {
 		padding: 0 20px;
-		margin: 0px;
+		margin: 60px 0 0 0;
 		width: 100%;
+		height: 100%;
+
+		background-image: url('../img/bg_900x1600.jpg');
+		/* background-position-y: 40px; */
+		background-size: auto 100%;
+		background-position: center center;
+
+		background-attachment: fixed;
 	}
 	iframe {
 		width: 100% !important;
@@ -398,14 +484,14 @@
 }
 @media only screen and (max-width: 320px) {
 	body {
-		/* background-image: url('../img/oz-001-mobile.jpg'); */
-		background-position-y: 40px;
-		background-size: cover;
-		background-attachment: fixed;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
 	}
-	body::before {
-		/* background-image: url('../img/oz-002-mobile.jpg'); */
-		background-size: cover;
+	.divBodyWrapper {
+		display: flex;
+		flex-direction: column;
+		flex: 100%;
 	}
 	#btnGoToTop {
 		bottom: 58px;
@@ -432,8 +518,16 @@
 	}
 	.divBodyContent {
 		padding: 0 20px;
-		margin: 0px;
+		margin: 60px 0 0 0;
 		width: 100%;
+		height: 100%;
+
+		background-image: url('../img/bg_900x1600.jpg');
+		/* background-position-y: 40px; */
+		background-size: auto 100%;
+		background-position: center center;
+
+		background-attachment: fixed;
 	}
 	iframe {
 		width: 100% !important;
@@ -482,15 +576,14 @@
 
 @media only screen  and (min-device-width: 320px)  and (max-device-width: 568px) and (orientation: portrait) {
 	body {
-		/* background-image: url('../img/oz-001-mobile.jpg'); */
-		background-position-y: 40px;
-		background-size: cover;
-
-		background-attachment: fixed;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
 	}
-	body::before {
-		/* background-image: url('../img/oz-002-mobile.jpg'); */
-		background-size: cover;
+	.divBodyWrapper {
+		display: flex;
+		flex-direction: column;
+		flex: 100%;
 	}
 	#btnGoToTop {
 		bottom: 58px;
@@ -517,8 +610,16 @@
 	}
 	.divBodyContent {
 		padding: 0 20px;
-		margin: 0px;
+		margin: 60px 0 0 0;
 		width: 100%;
+		height: 100%;
+
+		background-image: url('../img/bg_900x1600.jpg');
+		/* background-position-y: 40px; */
+		background-size: auto 100%;
+		background-position: center center;
+
+		background-attachment: fixed;
 	}
 	iframe {
 		width: 100% !important;
@@ -551,15 +652,14 @@
 }
 @media only screen and (min-device-width: 350px) and (max-device-width: 812px) and (orientation: portrait) {
 	body {
-		/* background-image: url('../img/oz-001-mobile.jpg'); */
-		background-position-y: 40px;
-		background-size: cover;
-
-		background-attachment: fixed;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
 	}
-	body::before {
-		/* background-image: url('../img/oz-002-mobile.jpg'); */
-		background-size: cover;
+	.divBodyWrapper {
+		display: flex;
+		flex-direction: column;
+		flex: 100%;
 	}
 	#btnGoToTop {
 		bottom: 58px;
@@ -586,8 +686,16 @@
 	}
 	.divBodyContent {
 		padding: 0 20px;
-		margin: 0px;
+		margin: 60px 0 0 0;
 		width: 100%;
+		height: 100%;
+
+		background-image: url('../img/bg_900x1600.jpg');
+		/* background-position-y: 40px; */
+		background-size: auto 100%;
+		background-position: center center;
+
+		background-attachment: fixed;
 	}
 	iframe {
 		width: 100% !important;
@@ -618,19 +726,16 @@
 		margin-bottom: 15px;
 	}
 }
-@media only screen and (min-device-width: 600px) and (max-device-width: 1180px) and (orientation: portrait) {
+@media only screen and (min-device-width: 600px) and (max-device-width: 1024px) and (orientation: portrait) {
 	body {
-		/* background-image: url('../img/oz-001-mobile.jpg'); */
-		background-position-y: 40px;
-		background-size: cover;
-
-		background-attachment: fixed;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
 	}
-	body::before {
-		/* background-image: url('../img/oz-002-mobile.jpg'); */
-		background-size: cover;
-
-		/* animation: none; */
+	.divBodyWrapper {
+		display: flex;
+		flex-direction: column;
+		flex: 100%;
 	}
 	#btnGoToTop {
 		bottom: 58px;
@@ -657,8 +762,16 @@
 	}
 	.divBodyContent {
 		padding: 0 20px;
-		margin: 0px;
+		margin: 60px 0 0 0;
 		width: 100%;
+		height: 100%;
+
+		background-image: url('../img/bg_1200x1600.jpg');
+		/* background-position-y: 40px; */
+		background-size: auto 100%;
+		background-position: center center;
+
+		background-attachment: fixed;
 	}
 	.divPageContent {
 		padding-left: 0px;
