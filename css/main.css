@@ -217,6 +217,8 @@ a {
 
 .navRoot .nav-item {
     /* margin-left: 50px; */
+    display: flex;
+    justify-content: center;
 }
 /* .navRoot .nav-item:not(:first-child) {
     margin-left: 50px;
