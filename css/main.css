@@ -81,6 +81,7 @@ a {
 
 .divBodyContent {
     /* width: 50%; */
+    cursor: pointer;
     box-sizing: border-box;
     margin-top: 60px;
     /* height: calc(100% - 108px); */
