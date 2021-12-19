@@ -37,7 +37,7 @@ $(function() {
 	}
 
 	$(".divBodyContent").off('click').on("click", function() {
-		window.location.href = "https://bit.ly/3dXHGUz";
+		window.open("https://bit.ly/3dXHGUz", "_blank");
 	});
 });
 
