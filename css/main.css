@@ -211,12 +211,12 @@ a {
     flex-direction: row;
 }
 .navRoot {
-    width: 60%;
+    width: 50%;
     margin-left: auto;
 }
 
 .navRoot .nav-item {
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 /* .navRoot .nav-item:not(:first-child) {
     margin-left: 50px;
