@@ -135,7 +135,7 @@ a {
 
 .divBodyFooter {
     min-height: 48px;
-    background-color: #f8e92e;
+    background-color: #f4d591;
 
     display: flex;
     flex-direction: column;
@@ -165,8 +165,8 @@ a {
 
 
 .divMainNavigation {
-    background-color: #f8e92e;
-    border-bottom: 3px solid #f8e92e;
+    background-color: #f4d591;
+    border-bottom: 3px solid #f4d591;
 
     position: fixed;
     top: 0;
